@@ -1,5 +1,7 @@
-import Navbar from "@/components/Navbar.js";
 import "@/assets/styles/globals.css";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import React from "react";
 
 export const metadata = {
   title: "PropertyPulse | Find The Perfect Rental",
@@ -7,14 +9,13 @@ export const metadata = {
   keywords: "rental, find rentals, find properties, ",
 };
 
-import React from "react";
-
 const MainLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
         <Navbar />
-        <div>{children}</div>
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
