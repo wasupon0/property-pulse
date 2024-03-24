@@ -14,6 +14,7 @@ const MainLayout = ({ children }) => {
   return (
     <AuthProvider>
       <html lang="en">
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <body>
           <Navbar />
           <main>{children}</main>
