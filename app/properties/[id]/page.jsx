@@ -39,7 +39,7 @@ const PropertyPage = () => {
 
   if (!property && !loading) {
     return (
-      <h1 classNameName="mt-10 text-2xl font-bold text-center">
+      <h1 className="mt-10 text-2xl font-bold text-center">
         Property Not Found
       </h1>
     );
@@ -51,7 +51,6 @@ const PropertyPage = () => {
       {!loading && property && (
         <>
           <PropertyHeaderImage image={property.images[0]} />
-          {/* <!-- Go Back --> */}
           <section>
             <div className="container px-6 py-6 m-auto">
               <Link
@@ -63,19 +62,13 @@ const PropertyPage = () => {
             </div>
           </section>
 
-          {/* <!-- Property Info --> */}
           <section className="bg-blue-50">
             <div className="container px-6 py-10 m-auto">
               <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-70/30">
                 <PropertyDetails property={property} />
-
-                {/* <!-- Sidebar --> */}
                 <aside className="space-y-4">
                   <BookmarkButton property={property} />
-
                   <ShareButtons property={property} />
-
-                  {/* <!-- Contact Form --> */}
                   <PropertyContactForm property={property} />
                 </aside>
               </div>
@@ -87,5 +80,4 @@ const PropertyPage = () => {
     </>
   );
 };
-
 export default PropertyPage;
