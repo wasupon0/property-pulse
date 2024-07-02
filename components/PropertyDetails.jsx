@@ -1,3 +1,4 @@
+import PropertyMap from "@/components/PropertyMap";
 import React from "react";
 import {
   FaBath,
@@ -94,7 +95,7 @@ const PropertyDetails = ({ property }) => {
         </ul>
       </div>
       <div className="p-6 mt-6 bg-white rounded-lg shadow-md">
-        <div id="map"></div>
+        <PropertyMap property={property} />
       </div>
     </main>
   );
