@@ -9,14 +9,14 @@ const PropertyImages = ({ images }) => {
           <div className="container mx-auto">
             {images.length == 1 ? (
               <Item
-                original={image}
-                thumbnail={image}
+                original={images[0]}
+                thumbnail={images[0]}
                 width="1000"
                 height="600"
               >
                 {({ ref, open }) => (
                   <Image
-                    src={image}
+                    src={images[0]}
                     ref={ref}
                     onClick={open}
                     alt=""

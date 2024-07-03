@@ -76,7 +76,7 @@ const PropertySchema = new Schema(
         type: String,
       },
     ],
-    is_Featured: {
+    is_featured: {
       type: Boolean,
       default: false,
     },
